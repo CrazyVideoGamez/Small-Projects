@@ -1,3 +1,5 @@
+# Copy this code in your editor
+
 def simplify(fraction):
     '''
 simplify(fraction)
