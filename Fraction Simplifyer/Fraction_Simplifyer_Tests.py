@@ -1,5 +1,7 @@
 import unittest
 
+from Fraction_Simplifyer import simplify
+
 class test(unittest.TestCase):
 
     def test_wrong_input_type(self):
