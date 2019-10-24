@@ -11,11 +11,11 @@ def factorize(num:int):
             except IndexError:
                 full = ''
                 if num != 1:
-                    isthere = divs.get(num)
+                    isthere = divs.get(str(num))
                     if isthere:
-                        divs[num] += 1
+                        divs[str(num)] += 1
                     else:
-                        divs[num] = 1
+                        divs[str(num)] = 1
                 for n,power in divs.items():
                     full += str(n)
                     if power != 1:
