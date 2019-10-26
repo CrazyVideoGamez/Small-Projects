@@ -9,13 +9,14 @@ def factorize(num:int):
             try:
                 div = isPrime(num).split('not prime because of ')[1]
             except IndexError:
+                num = str(num)
                 full = ''
                 if num != 1:
-                    isthere = divs.get(str(num))
+                    isthere = divs.get(num)
                     if isthere:
-                        divs[str(num)] += 1
+                        divs[num] += 1
                     else:
-                        divs[str(num)] = 1
+                        divs[num] = 1
                 for n,power in divs.items():
                     full += str(n)
                     if power != 1:
