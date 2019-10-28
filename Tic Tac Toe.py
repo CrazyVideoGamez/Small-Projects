@@ -103,29 +103,21 @@ def check():
     show_board()
     for fir,sec,thir in hor:
         if fir == sec and fir == thir and fir != None:
-            if fir == 'o':
-                print('Player O wins!')
-            elif fir == 'x':
-                print('Player X wins!')
+            which = fir
             done = True
             break
     for fir,sec,thir in ver:
         if fir == sec and fir == thir and fir != None:
-            if fir == 'o':
-                print('Player O wins!')
-            elif fir == 'x':
-                print('Player X wins!')
+            which = fir
             done = True
             break
     for fir,sec,thir in dia:
         if fir == sec and fir == thir and fir != None:
-            if fir == 'o':
-                print('Player O wins!')
-            elif fir == 'x':
-                print('Player X wins!')
+            which = fir
             done = True
             break
     if done:
+        print(f'Player {which.upper()} wins!')
         while True:
             again = input('Play again (y/n)? ')
             if again == 'y':
